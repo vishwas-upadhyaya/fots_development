@@ -90,7 +90,7 @@ nest-asyncio==1.5.8
 networkx==3.2
 nltk==3.7
 numexpr==2.8.4
-numpy==1.23.5
+numpy==1.22.3
 oauthlib==3.2.1
 opt-einsum==3.3.0
 packaging==23.2
