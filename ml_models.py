@@ -461,6 +461,7 @@ def inferencePipeline_lite(img):
 
     # 1.Text Detection
     img = cv2.resize(img, dsize=(512, 512), interpolation=cv2.INTER_AREA)
+    print(img.shape)
     detectors.set_tensor(input_details_detector[0]['index'], np.expand_dims(img, axis=0).astype(np.float32))
     detectors.invoke()
     ii = detectors.get_tensor(output_details_detector[0]['index'])
